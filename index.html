@@ -406,12 +406,12 @@
                   <h2 class="page-section-heading d-inline-block text-white">&nbsp;</h2>
                 </div>
         </section>
-        <section class="page-section bg-primary text-white mb-0" id="ablation">
-          <div class="container">
-                </div>
-            </div>
-        </section>
-   <!-- ABLATION -->
+
+
+
+
+
+
         <section class="page-section bg-info text-white mb-0" id="zero-shot">
             <div class="container">
                 <div class="text-center">
@@ -459,7 +459,101 @@
               </div>
                     </div>
                     </section>
-                    <section class="page-section bg-primary text-white mb-0" id="conversion">
+
+                    <section class="page-section bg-primary text-white mb-0" id="adaptation">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="page-section-heading d-inline-block">Speaker Adaptation</h2>
+   <p class="pre-wrap lead">We train the baseline HierSpeech using VCTK (98 speakers) and LibriTTS (1,151 speakers). Based on the pre-trained HierSpeech, we fine-tune each model with 20 samples from each speaker (10 novel speakers from VCTK)</p>
+                </div>
+
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-auto ml-auto">
+                                            <table class="table table-responsive align-content-center" style="background-color: whitesmoke; border-radius: 20px">
+                          <thead>
+                            <tr>
+                              <th style="width: 33.3%"><p><em>Sentence 1: </em></p>
+                            </th>
+                              <th style="width: 33.3%">&nbsp;</th>
+                              <th style="width: 33.3%">&nbsp;</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td rowspan="1" style="vertical-align: top;"><p><strong>GT</strong></p>
+                               
+                                <audio id="player" controls >
+                                    <source src="audio/adaptation/gt/generated_p246_016.wav" type="audio/wav" />
+                                </audio>
+                        </td>
+                        </tr>
+                        <tr>
+                     <td><p><strong>HierSpeech (Zero-shot)</strong></p>
+                                <audio id="player" controls>
+                                    <source src="audio/adaptation/zeroshot/generated_p246_016.wav" type="audio/wav" />
+                                </audio>
+                              </td>
+                              <td><p><strong>HierSpeech</strong></p>
+                                <audio id="player" controls>
+                                    <source src="audio/adaptation/hierspeech/generated_p246_016.wav" type="audio/wav" />
+                                </audio>
+                              </td>
+                              <td><p><strong>HierSpeech-U</strong></p>
+                                <audio id="player" controls>
+                                  <source src="audio/adaptation/hierspeechu/generated_p246_016.wav" type="audio/wav" />
+                                </audio></td>
+                    
+                            </tr>
+                          </tbody>
+                        </table>
+                                                                       <table class="table table-responsive align-content-center" style="background-color: whitesmoke; border-radius: 20px">
+                          <thead>
+                            <tr>
+                              <th style="width: 33.3%"><p><em>Sentence 2: </em></p>
+                            </th>
+                              <th style="width: 33.3%">&nbsp;</th>
+                              <th style="width: 33.3%">&nbsp;</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td rowspan="1" style="vertical-align: top;"><p><strong>GT</strong></p>
+                               
+                                <audio id="player" controls >
+                                    <source src="audio/adaptation/gt/generated_p305_018.wav" type="audio/wav" />
+                                </audio>
+                        </td>
+                        </tr>
+                        <tr>
+                     <td><p><strong>HierSpeech (Zero-shot)</strong></p>
+                                <audio id="player" controls>
+                                    <source src="audio/adaptation/zeroshot/generated_p305_018.wav" type="audio/wav" />
+                                </audio>
+                              </td>
+                              <td><p><strong>HierSpeech</strong></p>
+                                <audio id="player" controls>
+                                    <source src="audio/adaptation/hierspeech/generated_p305_018.wav" type="audio/wav" />
+                                </audio>
+                              </td>
+                              <td><p><strong>HierSpeech-U</strong></p>
+                                <audio id="player" controls>
+                                  <source src="audio/adaptation/hierspeechu/generated_p305_018.wav" type="audio/wav" />
+                                </audio></td>
+                    
+                            </tr>
+                          </tbody>
+                        </table>
+                      <p> </p>
+                  </div>
+              </div>
+                    </div>
+                    </section>   
+
+
+                    <section class="page-section bg-info text-white mb-0" id="conversion"> 
             <div class="container">
                 <!-- About Section Heading-->
                 <div class="text-center">
