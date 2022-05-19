@@ -67,7 +67,7 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <div class="col-lg-12 ml-auto">
-                      <p class="pre-wrap lead">Although speech consists of various attributes (e.g., pronunciation, rhythm, intonation, and timbre), current text-to-speech (TTS) systems synthesize the speech (e.g., Mel-spectrogram and raw waveform) by generating all attributes from text sequence at once. In particular, single-stage end-to-end TTS is a more challenging issue, which directly generates raw waveforms from text sequence. In this paper, we present HierSpeech which is a hierarchical conditional variational autoencoder using self-supervised representation for end-to-end TTS system. We leverage self-supervised speech representation to decompose the speech and learn each attribute hierarchically from decomposed speech representations. By bridging the gap between text and speech through the self-supervised speech representation, HierSpeech can significantly improve the reconstruction quality. Compared to the best previous end-to-end TTS work, HierSpeech reduces the phoneme error rate of synthesized speech on the VCTK dataset from 9.16 to 5.78. Using the pre-trained HierSpeech, we extend the model to the adaptive TTS. Specifically, we propose the HierSpeech-U, which can adapt the TTS model with untranscribed speech data. The experimental results show that our method outperforms the publicly available TTS models, and show the superiority of our model in speaker adaptation.  </p>
+                      <p class="pre-wrap lead">This paper presents HierSpeech, a high-quality end-to-end text-to-speech (TTS) system based on a hierarchical conditional variational autoencoder (VAE) utilizing self-supervised speech representations. Recently, single-stage TTS systems, which directly generate raw speech waveform from text, have been getting interest thanks to their ability in generating high-quality audio within a fully end-to-end training pipeline. However, there is still a room for improvement in the conventional TTS systems. Since it is challenging to infer both the linguistic and acoustic attributes from the text directly, missing the details of attributes, specifically linguistic information, is inevitable, which results in mispronunciation and over-smoothing problem in their synthetic speech. To address the aforementioned problem, we leverage self-supervised speech representations as additional linguistic representations to bridge an information gap between text and speech. Then, the hierarchical conditional VAE is adopted to connect these representations and to learn each attribute hierarchically by improving the linguistic capability in latent representations. Compared with the state-of-the-art TTS system, HierSpeech achieves +0.303 comparative mean opinion score, and reduces the phoneme error rate of synthesized speech from 9.16\% to 5.78\% on the VCTK dataset. Furthermore, we extend our model to HierSpeech-U, an untranscribed text-to-speech system. Specifically, HierSpeech-U can adapt to a novel speaker by utilizing self-supervised speech representations without text transcripts. The experimental results reveal that our method outperforms publicly available TTS models, and show the effectiveness of speaker adaptation with untranscribed speech.</p>
                         <p class="pre-wrap lead">&nbsp;</p>
                         <p class="pre-wrap lead">&nbsp;</p>
                         <p class="pre-wrap lead">We compare HierSpeech with several TTS models as:</p>
@@ -1423,10 +1423,8 @@
                                             <table class="table table-responsive align-content-center" style="background-color: whitesmoke; border-radius: 20px">
                           <thead>
                             <tr>
-                              <th style="width: 33.3%"><p><em>Sentence 1: </em></p>
-                            </th>
-                              <th style="width: 33.3%">&nbsp;</th>
-                              <th style="width: 33.3%">&nbsp;</th>
+                              <th colspan="3"><p><em>Sentence 1: </em></p>
+                              <p><em></em></p>
                             </tr>
                           </thead>
                           <tbody>
